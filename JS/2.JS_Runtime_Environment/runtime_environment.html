@@ -7,6 +7,7 @@
 
     <!--
         head 요소 안에 script 요소로 Javascript 작성 가능
+        - HTML 요소에 Javascript의 결과가 영향을 미칠때
     -->
     <script>
         function buttonClickEvent () {
@@ -25,6 +26,14 @@
     
     <button onclick="buttonClickEvent();">버튼1</button>
     <button onclick="buttonClickEvent2();">버튼2</button>
+
+    <!--
+        body 요소 내부에서 script 작성 가능 
+        - HTML 요소에 Javascript의 결과가 직접적으로 영향을 미치지 않을때
+    -->
+    <script>
+        alert('안녕하세요.')
+    </script>
 
 </body>
 </html>
