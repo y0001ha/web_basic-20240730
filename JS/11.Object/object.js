@@ -14,7 +14,7 @@ var hongGildong = {
     age: 23, 
     address: '부산광역시',
     greeting: function () {
-    console.log('안녕 난 ${this.name} 이야!');
+    console.log(`안녕 난 ${this.name} 이야!`);
     }
 }
 console.log(hongGildong);
