@@ -137,11 +137,22 @@ var soonJong = goJong;
 // console.log(soonJong);
 // console.log(goJong); //-@@@@@@@@@ 얕은복사 -주소복사
 
-soonJong = {
-    name: goJong.name,
-    age: goJong.age, 
-    address: goJong.address
-} 
+// soonJong = {
+//     name: goJong.name,
+//     age: goJong.age, 
+//     address: goJong.address
+// } 
+// soonJong.name = '이척';
+// console.log(soonJong);
+// console.log(goJong); // 깊은복사 -속성그대로
+
+// var soonJong = {};
+// for (var key in goJong) {
+//     soonJong[key] = goJong[key];
+// }
+// soonJong.name = '이척';
+
+var soonJong = { ...goJong }; // 변수를 분해
 soonJong.name = '이척';
 console.log(soonJong);
-console.log(goJong); // 깊은복사 -속성그대로
+console.log(goJong);
